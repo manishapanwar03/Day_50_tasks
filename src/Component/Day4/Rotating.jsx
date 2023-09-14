@@ -5,9 +5,10 @@ const Rotating = () => {
     <>
     <div className='container show nav'>
         <div className='circle-container'>
-          <div className='circle'></div>
-          <button id='close'>close</button>
+          <div className='circle'>
+          <button id='close'></button>
           <button id='open'>open</button>
+          </div>
        </div>
     <div className='content'>
       <h1>Amazing article</h1>

@@ -6,7 +6,7 @@
     width: calc(100vw + 60px);
     height: calc(100vh + 60px);
     z-index: -1;
-    filter: blur(0px);
+    /* filter: blur(0px); */
   }
   body {
     font-family: 'Ubuntu', sans-serif;
@@ -21,4 +21,6 @@
     font-size: 50px;
     color: #fff;
   }
-  
+  element.style {
+    filter: blur(0px);
+}

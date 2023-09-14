@@ -9,12 +9,12 @@ const Progresssteps = () => {
     }
     const handleNext = () => {
         if (currentStep < 5) {
-            setCurrentStep(currentStep +     1)
+            setCurrentStep(currentStep + 1)
         }
     }
 
     const getCircleColor = (stepNumber) => {
-        return currentStep >= stepNumber ? 'red' : 'lightgray';
+        return currentStep >= stepNumber ? 'lightblue' : 'lightgray';
 
     }
     return (
