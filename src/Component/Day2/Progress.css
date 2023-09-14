@@ -1,0 +1,41 @@
+
+.circle {
+    background-color: #fff;
+    color: #999;
+    border-radius: 20%;
+    height: 30px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.progreess {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+    
+}
+
+.pre {
+    color: black;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}

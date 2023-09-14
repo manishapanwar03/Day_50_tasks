@@ -1,0 +1,57 @@
+.container {
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+.circle {
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.content img {
+    max-width: 100%;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.container.show-nav {
+    transform: rotate(-20deg);
+}
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+.circle button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+}
+.container.show-nav {
+    transform: rotate(-20deg);
+}
+.circle button#open {
+    left: 60%;
+}                                                      

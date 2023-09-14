@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+}
+
+.first.active{
+    flex-grow:5;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+div{
+    display: block;
+}
+body{
+    margin: 0%;
+    /* overflow: hidden; */
+    /* justify-content: center; */
+}
+h4{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.first.active h4 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+.first h4 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.first {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 25px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    padding: px;
+}
+    
