@@ -27,6 +27,7 @@ const Form_wave = () => {
                         <span style={{ transitionDelay: "250ms" }}> o</span >
                         <span style={{ transitionDelay: "300ms" }}> r</span >
                         <span style={{ transitionDelay: "350ms" }}> d</span >
+                      
                     </label >
                 </div >
                 <button className='btn'>Login</button>

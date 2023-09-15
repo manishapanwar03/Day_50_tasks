@@ -33,6 +33,6 @@ const Blury = () => {
       <div className='loading-text'>{count}%</div>
     </>
   );
-};
+}; 
 
 export default Blury;

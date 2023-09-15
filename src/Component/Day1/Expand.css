@@ -12,8 +12,8 @@ div{
 }
 body{
     margin: 0%;
-    /* overflow: hidden; */
-    /* justify-content: center; */
+    overflow: hidden;
+    justify-content: center;
 }
 h4{
     display: block;

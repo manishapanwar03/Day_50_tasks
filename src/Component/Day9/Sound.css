@@ -1,0 +1,33 @@
+audio {
+    width: 300px;
+    height: 54px;
+}
+body {
+    background-color: rgb(161, 100, 223);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+audio:not([controls]) {
+    display: none !important;
+}
+.btn {
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+* {
+    box-sizing: border-box;
+}

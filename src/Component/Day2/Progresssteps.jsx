@@ -27,8 +27,8 @@ const Progresssteps = () => {
                     <div className='circle' style={{ backgroundColor: getCircleColor(4) }}>4</div>
                     <div className='circle' style={{ backgroundColor: getCircleColor(5) }}>5</div>
                 </div>
-                <button className="pre" onClick={handlePre}>Pre</button>
-                <button className='pre' onClick={handleNext}>Next</button>
+                <button className="btn" onClick={handlePre}>Pre</button>
+                <button className='btn' onClick={handleNext}>Next</button>
             </div>
         </>
     )
