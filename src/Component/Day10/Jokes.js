@@ -1,26 +1,34 @@
 import React, { useState, useEffect } from "react";
-import './Jokes.css'
+import axios from "axios";
+import './Jokes.css';
+
 function Jokes() {
   const [joke, setJoke] = useState("");
 
   const fetchNewJoke = () => {
-    fetch("https://icanhazdadjoke.com/", {
+    axios.get("https://icanhazdadjoke.com/", {
       headers: {
         Accept: "application/json"
       }
     })
-      .then(r => r.json())
-      .then(d => setJoke(d.joke));
+      .then(response => {
+        setJoke(response.data.joke);
+        
+      })
+      .catch(error => {
+        console.error("Error fetching joke:", error);
+      });
   };
 
-  useEffect(fetchNewJoke, []);
+  useEffect(() => {
+    fetchNewJoke();
+  }, []);
 
-  return (
+  return (  
     <div className="container">
        <h3>Don't Laugh Challenge</h3>
-      <div id='joke' className='joke'>{joke}
-   </div>
-      <button  id='jokebtn' className='btn'   onClick={fetchNewJoke}>Get another way!!!!</button>
+      <div id='joke' className='joke'>{joke}</div>
+      <button id='jokebtn' className='btn' onClick={fetchNewJoke}>Get another way!!!!</button>
     </div>
   );
 }

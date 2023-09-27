@@ -13,6 +13,8 @@
   }
 }
 
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +37,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* Add your CSS styles here for the layout */
+.app {
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.chart {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
